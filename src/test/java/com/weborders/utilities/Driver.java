@@ -89,7 +89,7 @@ public class Driver {
         }
         return driverPool.get();
     }
-
+//every thread will create a clone
     public static void closeDriver() {
         if (driverPool != null) {
             driverPool.get().quit();
